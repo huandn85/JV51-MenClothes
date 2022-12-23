@@ -1,7 +1,7 @@
 package repository;
 
-import entity.ProductSize;
+import entity.ProductSizeColor;
 import org.springframework.data.repository.CrudRepository;
 
-public interface ProductSizeRepository extends CrudRepository<ProductSize, Integer> {
+public interface ProductSizeRepository extends CrudRepository<ProductSizeColor, Integer> {
 }
