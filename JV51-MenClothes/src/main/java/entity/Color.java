@@ -1,10 +1,15 @@
 package entity;
 
+import javax.persistence.*;
 import java.util.List;
-
+@Entity
+@Table(name = "color")
 public class Color {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    @OneToMany(mappedBy = "colorId", fetch = FetchType.EAGER)
     private List<ProductSizeColor> listProductColor;
 
     public Color() {

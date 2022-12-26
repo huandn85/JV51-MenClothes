@@ -1,19 +1,27 @@
 package entity;
 
+import javax.persistence.*;
 import java.awt.*;
 import java.time.LocalDate;
 import java.util.List;
-
+@Entity
+@Table(name = "product")
 public class Product {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
+    @ManyToOne
+    @JoinColumn(name = "categoryId")
     private Category categoryId;
     private float importPrice;
     private float price;
     private String description;
     private LocalDate date;
     private int quantity;
+    @OneToMany(mappedBy = "productId",fetch = FetchType.EAGER)
     private List<ImageProduct> imageProductList;
+    @OneToMany(mappedBy = "productId",fetch = FetchType.EAGER)
     private List<ProductSizeColor> productSizeColorList;
 
     public Product() {

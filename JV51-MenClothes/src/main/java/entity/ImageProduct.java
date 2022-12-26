@@ -1,8 +1,16 @@
 package entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "imageproduct")
 public class ImageProduct {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String image;
+    @ManyToOne
+    @JoinColumn(name = "productId")
     private Product productId;
 
     public ImageProduct() {

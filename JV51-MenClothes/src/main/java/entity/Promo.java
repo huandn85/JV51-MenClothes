@@ -1,11 +1,18 @@
 package entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "promo")
 public class Promo {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private int numberUsers;
     private String expiry;
     private String discount;
+
 
     public Promo() {
     }

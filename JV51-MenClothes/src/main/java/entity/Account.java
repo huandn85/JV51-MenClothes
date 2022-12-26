@@ -1,13 +1,17 @@
 package entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
+import javax.persistence.*;
 
-
+@Entity
+@Table(name = "account")
 public class Account {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String password;
+    @ManyToOne
+    @JoinColumn(name = "roleId")
     private Role roleId;
 
     public Account() {

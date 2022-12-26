@@ -1,21 +1,38 @@
 package entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "customer")
 public class Customer {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private String address;
     private String phone;
     private String email;
-
+    @OneToOne
+    @JoinColumn(name = "accountId",referencedColumnName = "id")
+    private Account account;
     public Customer() {
     }
 
-    public Customer(int id, String name, String address, String phone, String email) {
+    public Customer(int id, String name, String address, String phone, String email, Account account) {
         this.id = id;
         this.name = name;
         this.address = address;
         this.phone = phone;
         this.email = email;
+        this.account = account;
+    }
+
+    public Account getAccount() {
+        return account;
+    }
+
+    public void setAccount(Account account) {
+        this.account = account;
     }
 
     public int getId() {

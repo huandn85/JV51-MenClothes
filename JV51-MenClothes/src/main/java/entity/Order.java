@@ -1,17 +1,32 @@
 package entity;
 
+import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
-
+@Entity
+@Table(name = "order")
 public class Order {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @ManyToOne
+    @JoinColumn(name = "accountId")
     private Account accountId;
     private Date orderDate;
     private float amount;
+    @ManyToOne
+    @JoinColumn(name = "shipmentId")
     private Shipment shipmentId;
+    @ManyToOne
+    @JoinColumn(name = "statusId")
     private Status statusId;
+    @OneToOne
+    @JoinColumn(name = "promoId",referencedColumnName = "id")
     private Promo promoId;
+    @OneToOne
+    @JoinColumn(name = "paymentId",referencedColumnName = "id")
     private PaymentMethods paymentId;
+    @OneToMany(mappedBy = "orderdetailsId",fetch = FetchType.EAGER)
     private List<OrderDetails> orderDetailsList;
 
     public Order() {

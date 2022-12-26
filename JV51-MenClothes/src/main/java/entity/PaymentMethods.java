@@ -1,6 +1,12 @@
 package entity;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "paymentmethods")
 public class PaymentMethods {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
 

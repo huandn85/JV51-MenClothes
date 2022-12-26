@@ -1,21 +1,31 @@
 package entity;
 
+import javax.persistence.*;
+import java.util.List;
+
+@Entity
+@Table(name = "shipment")
 public class Shipment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String customerName;
     private String address;
     private String phone;
     private float price;
+    @OneToMany(mappedBy = "shipmentId")
+    private List<Order> orderList;
 
     public Shipment() {
     }
 
-    public Shipment(int id, String customerName, String address, String phone, float price) {
+    public Shipment(int id, String customerName, String address, String phone, float price, List<Order> orderList) {
         this.id = id;
         this.customerName = customerName;
         this.address = address;
         this.phone = phone;
         this.price = price;
+        this.orderList = orderList;
     }
 
     public int getId() {
@@ -56,5 +66,13 @@ public class Shipment {
 
     public void setPrice(float price) {
         this.price = price;
+    }
+
+    public List<Order> getOrderList() {
+        return orderList;
+    }
+
+    public void setOrderList(List<Order> orderList) {
+        this.orderList = orderList;
     }
 }
