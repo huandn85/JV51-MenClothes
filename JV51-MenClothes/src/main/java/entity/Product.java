@@ -19,9 +19,9 @@ public class Product {
     private String description;
     private LocalDate date;
     private int quantity;
-    @OneToMany(mappedBy = "productId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "productId")
     private List<ImageProduct> imageProductList;
-    @OneToMany(mappedBy = "productId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "productId")
     private List<ProductSizeColor> productSizeColorList;
 
     public Product() {

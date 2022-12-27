@@ -9,7 +9,7 @@ public class Color {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToMany(mappedBy = "colorId", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "colorId")
     private List<ProductSizeColor> listProductColor;
 
     public Color() {

@@ -9,7 +9,7 @@ public class Size {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToMany(mappedBy = "sizeId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "sizeId")
     private List<ProductSizeColor> listProductSize;
 
     public Size() {

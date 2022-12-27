@@ -14,22 +14,19 @@ public class OrderDetails {
     private Product productId;
     @ManyToOne
     @JoinColumn(name = "orderId")
-    private Order orderId;
+    private Order order;
     private float amount;
     private int quantity;
-    @OneToMany(mappedBy = "orderId")
-    private List<Order> orderList;
 
     public OrderDetails() {
     }
 
-    public OrderDetails(int id, Product productId, Order orderId, float amount, int quantity, List<Order> orderList) {
+    public OrderDetails(int id, Product productId, Order order, float amount, int quantity) {
         this.id = id;
         this.productId = productId;
-        this.orderId = orderId;
+        this.order = order;
         this.amount = amount;
         this.quantity = quantity;
-        this.orderList = orderList;
     }
 
     public int getId() {
@@ -48,12 +45,12 @@ public class OrderDetails {
         this.productId = productId;
     }
 
-    public Order getOrderId() {
-        return orderId;
+    public Order getOrder() {
+        return order;
     }
 
-    public void setOrderId(Order orderId) {
-        this.orderId = orderId;
+    public void setOrder(Order order) {
+        this.order = order;
     }
 
     public float getAmount() {
@@ -70,13 +67,5 @@ public class OrderDetails {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public List<Order> getOrderList() {
-        return orderList;
-    }
-
-    public void setOrderList(List<Order> orderList) {
-        this.orderList = orderList;
     }
 }

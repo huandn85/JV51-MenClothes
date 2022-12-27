@@ -20,7 +20,7 @@
     <mvc:default-servlet-handler />
     <mvc:annotation-driven />
 
-    <mvc:resources mapping="/webjars/**" location="/webjars/"/>
+    <mvc:resources mapping="/template/**" location="/template/"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/view/"/>

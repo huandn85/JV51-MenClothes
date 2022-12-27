@@ -9,7 +9,7 @@ public class Role {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    @OneToMany(mappedBy = "accountId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "roleId")
     private List<Account> accountList;
 
     public Role() {

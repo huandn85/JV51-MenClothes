@@ -9,7 +9,7 @@ public class ProductSizeColor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne
-    @JoinColumn(name = "producId")
+    @JoinColumn(name = "productId")
     private Product productId;
     @ManyToOne
     @JoinColumn(name = "sizeId")

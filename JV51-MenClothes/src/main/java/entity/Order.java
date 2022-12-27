@@ -26,7 +26,7 @@ public class Order {
     @OneToOne
     @JoinColumn(name = "paymentId",referencedColumnName = "id")
     private PaymentMethods paymentId;
-    @OneToMany(mappedBy = "orderdetailsId",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "order")
     private List<OrderDetails> orderDetailsList;
 
     public Order() {
