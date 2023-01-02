@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
-  User: THIEN DO
-  Date: 11/21/2022
-  Time: 6:21 PM
+  User: PC
+  Date: 12/26/22
+  Time: 7:32 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -25,10 +25,6 @@
 
     <link href="<c:url value="/template/admin/dist/css/icons/material-design-iconic-font/css/materialdesignicons.min.css"/> " rel="stylesheet">
 <body>
-<!-- ============================================================== -->
-<!-- Preloader - style you can find in spinners.css -->
-<!-- ============================================================== -->
-
 
 <div class="preloader">
     <div class="lds-ripple">
@@ -36,13 +32,9 @@
         <div class="lds-pos"></div>
     </div>
 </div>
-<!-- ============================================================== -->
 <!-- Main wrapper - style you can find in pages.scss -->
-<!-- ============================================================== -->
 <div id="main-wrapper">
-    <!-- ============================================================== -->
     <!-- Topbar header - style you can find in pages.scss -->
-    <!-- ============================================================== -->
     <header class="topbar" data-navbarbg="skin5">
         <nav class="navbar top-navbar navbar-expand-md navbar-dark">
             <div class="navbar-header" data-logobg="skin5">
@@ -95,18 +87,18 @@
                     <!-- ============================================================== -->
                     <!-- create new -->
                     <!-- ============================================================== -->
-<%--                    <li class="nav-item dropdown">--%>
-<%--&lt;%&ndash;                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>&ndash;%&gt;--%>
-<%--&lt;%&ndash;                        </a>&ndash;%&gt;--%>
-<%--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">--%>
-<%--                            <a class="dropdown-item" href="#">Action</a>--%>
-<%--                            <a class="dropdown-item" href="#">Another action</a>--%>
-<%--                            <div class="dropdown-divider"></div>--%>
-<%--                            <a class="dropdown-item" href="#">Something else here</a>--%>
-<%--                        </div>--%>
-<%--                    </li>--%>
+                    <%--                    <li class="nav-item dropdown">--%>
+                    <%--&lt;%&ndash;                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                            <span class="d-none d-md-block">Create New <i class="fa fa-angle-down"></i></span>&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                            <span class="d-block d-md-none"><i class="fa fa-plus"></i></span>&ndash;%&gt;--%>
+                    <%--&lt;%&ndash;                        </a>&ndash;%&gt;--%>
+                    <%--                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">--%>
+                    <%--                            <a class="dropdown-item" href="#">Action</a>--%>
+                    <%--                            <a class="dropdown-item" href="#">Another action</a>--%>
+                    <%--                            <div class="dropdown-divider"></div>--%>
+                    <%--                            <a class="dropdown-item" href="#">Something else here</a>--%>
+                    <%--                        </div>--%>
+                    <%--                    </li>--%>
                     <!-- ============================================================== -->
                     <!-- Search -->
                     <!-- ============================================================== -->
@@ -222,12 +214,8 @@
             </div>
         </nav>
     </header>
-    <!-- ============================================================== -->
     <!-- End Topbar header -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
     <!-- Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
     <aside class="left-sidebar" data-sidebarbg="skin5">
         <!-- Sidebar scroll-->
         <div class="scroll-sidebar">
@@ -248,10 +236,10 @@
                         </ul>
                     </li>
                     <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-newspaper"></i><span class="hide-menu">Manage Customers</span></a>
-                    <ul aria-expanded="false" class="collapse  first-level">
-                        <li class="sidebar-item"><a href="" class="sidebar-link"><i class="fas fa-clone"></i><span class="hide-menu"> New </span></a></li>
-                        <li class="sidebar-item"><a href="" class="sidebar-link"><i class="fas fa-list"></i><span class="hide-menu"> List </span></a></li>
-                    </ul>
+                        <ul aria-expanded="false" class="collapse  first-level">
+                            <li class="sidebar-item"><a href="" class="sidebar-link"><i class="fas fa-clone"></i><span class="hide-menu"> New </span></a></li>
+                            <li class="sidebar-item"><a href="" class="sidebar-link"><i class="fas fa-list"></i><span class="hide-menu"> List </span></a></li>
+                        </ul>
                     </li>
                     <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-newspaper"></i><span class="hide-menu">Order </span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
@@ -267,12 +255,8 @@
         </div>
         <!-- End Sidebar scroll-->
     </aside>
-    <!-- ============================================================== -->
     <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
     <!-- Page wrapper  -->
-    <!-- ============================================================== -->
     <div class="page-wrapper">
         <div class="container-fruit">
             <div class="row">
@@ -281,36 +265,41 @@
                         <div class="card-body">
                             <h5 class="card-title">Basic Datatable</h5>
                             <div class="table-responsive">
-                                <a href="rqproduct" target="_blank" style="margin: 0 0 25px 10px;"><button type="button" class="btn btn-primary">Add Product</button></a>
+                                <a href="requestOr" target="_blank" style="margin: 0 0 25px 10px;"><button type="button" class="btn btn-primary">Add Order</button></a>
 
-                            <%--                                <div id="zero_config_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="zero_config_length"><label>Show <select name="zero_config_length" aria-controls="zero_config" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div>--%>
-<%--                                    <div class="col-sm-12 col-md-6"><div id="zero_config_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="zero_config"></label></div></div>--%>
-                                    <table id="zero_config" class="table table-striped table-bordered">
+                                <%--                                <div id="zero_config_wrapper" class="dataTables_wrapper container-fluid dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="zero_config_length"><label>Show <select name="zero_config_length" aria-controls="zero_config" class="form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div>--%>
+                                <%--                                    <div class="col-sm-12 col-md-6"><div id="zero_config_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="zero_config"></label></div></div>--%>
+                                <table id="zero_config" class="table table-striped table-bordered">
                                     <thead>
                                     <tr role="row">
                                         <th>ID</th>
-                                        <th>Name</th>
-                                        <th>Price</th>
-                                        <th>Date</th>
-                                        <th>Quantity</th>
+                                        <th>ACOUNT ID</th>
+                                        <th>OrderDate</th>
+                                        <th>Amount</th>
+                                        <th>ShipmentId</th>
+                                        <th>StatusId</th>
+                                        <th>PromoId</th>
+                                        <th>PaymentId</th>
                                         <th>Tool</th>
                                     </tr>
                                     </thead>
 
-                                    <c:forEach var="s" items="${listsPr}">
-                                    <tr>
-                                        <td>${s.id}</td>
-                                        <td>${s.name}</td>
-                                        <td>${s.price}</td>
-                                        <td>${s.dates}</td>
-                                        <td>${s.quantitys}</td>
-                                        <td>
-                                            <a href="requestId?id=${s.id}" target="_blank"><botton type="button" class="btn btn-primary">EDIT</botton></a>
-                                            <a href="deleteId?id=${s.id}" target="_blank"><botton type="button" class="btn btn-danger">DELETE</botton></a>
-                                        </td>
-                                    </tr>
+                                    <c:forEach var="s" items="${OrderList}">
+                                        <tr>
+                                            <td>${s.id}</td>
+                                            <td>${s.accountId.name}</td>
+                                            <td>${s.orderDate}</td>
+                                            <td>${s.amount}</td>
+                                            <td>${s.shipmentId.id}</td>
+                                            <td>${s.statusId.id}</td>
+                                            <td>${s.promoId.id}</td>
+                                            <td>${s.paymentId.id}</td>
+                                            <td>
+                                                <a href="requestId?id=${s.id}" target="_blank"><i class="fa-solid fa-pen ql-color-yellow"/></a>
+                                                <a href="deleteId?id=${s.id}" target="_blank"><i class="fa-solid fa-pen ql-color-yellow"/></a>
+                                            </td>
+                                        </tr>
                                     </c:forEach>
-
                                     </tfoot>
                                 </table>
                             </div>
@@ -321,67 +310,63 @@
             </div>
         </div>
 
-<%--        <!-- ============================================================== -->--%>
-<%--        <!-- Recent comment and chats -->--%>
-<%--        <!-- ============================================================== -->--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <!-- Recent comment and chats -->--%>
+        <%--        <!-- ============================================================== -->--%>
 
-<%--        <!-- ============================================================== -->--%>
-<%--        <!-- End Container fluid  -->--%>
-<%--        <!-- ============================================================== -->--%>
-<%--        <!-- ============================================================== -->--%>
-<%--        <!-- footer -->--%>
-<%--        <!-- ============================================================== -->--%>
-<%--        <footer class="footer text-center">--%>
-<%--            All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.--%>
-<%--        </footer>--%>
-<%--        <!-- ============================================================== -->--%>
-<%--        <!-- End footer -->--%>
-<%--        <!-- ============================================================== -->--%>
-<%--    </div>--%>
-    <!-- ============================================================== -->
-    <!-- End Page wrapper  -->
-    <!-- ============================================================== -->
-</div>
-<!-- ============================================================== -->
-<!-- End Wrapper -->
-<!-- ============================================================== -->
-<!-- ============================================================== -->
-<!-- All Jquery -->
-<!-- ============================================================== -->
-<script src="<c:url value="/template/admin/assets/libs/jquery/dist/jquery.min.js"/>"></script>
-<!-- Bootstrap tether Core JavaScript -->
-<script src="<c:url value="/template/admin/assets/libs/popper.js/dist/popper.min.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/bootstrap/dist/js/bootstrap.min.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/extra-libs/sparkline/sparkline.js" />"></script>
-<!--Wave Effects -->
-<script src="<c:url value="/template/admin/dist/js/waves.js" />"></script>
-<!--Menu sidebar -->
-<script src="<c:url value="/template/admin/dist/js/sidebarmenu.js"/>"></script>
-<!--Custom JavaScript -->
-<script src="<c:url value="/template/admin/dist/js/custom.min.js"/>"></script>
-<!--This page JavaScript -->
-<!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
-<!-- Charts js Files -->
-<script src="<c:url value="/template/admin/assets/libs/flot/excanvas.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.pie.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.time.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.stack.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.crosshair.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"/>"></script>
-<script src="<c:url value="/template/admin/dist/js/pages/chart/chart-page-init.js"/>"></script>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <!-- End Container fluid  -->--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <!-- footer -->--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <footer class="footer text-center">--%>
+        <%--            All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.--%>
+        <%--        </footer>--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--        <!-- End footer -->--%>
+        <%--        <!-- ============================================================== -->--%>
+        <%--    </div>--%>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+    <script src="<c:url value="/template/admin/assets/libs/jquery/dist/jquery.min.js"/>"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="<c:url value="/template/admin/assets/libs/popper.js/dist/popper.min.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/bootstrap/dist/js/bootstrap.min.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/extra-libs/sparkline/sparkline.js" />"></script>
+    <!--Wave Effects -->
+    <script src="<c:url value="/template/admin/dist/js/waves.js" />"></script>
+    <!--Menu sidebar -->
+    <script src="<c:url value="/template/admin/dist/js/sidebarmenu.js"/>"></script>
+    <!--Custom JavaScript -->
+    <script src="<c:url value="/template/admin/dist/js/custom.min.js"/>"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="dist/js/pages/dashboards/dashboard1.js"></script> -->
+    <!-- Charts js Files -->
+    <script src="<c:url value="/template/admin/assets/libs/flot/excanvas.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.pie.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.time.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.stack.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot/jquery.flot.crosshair.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"/>"></script>
+    <script src="<c:url value="/template/admin/dist/js/pages/chart/chart-page-init.js"/>"></script>
 
-<!-- this page js -->
-<script src="<c:url value="/template/admin/assets/extra-libs/multicheck/datatable-checkbox-init.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/extra-libs/multicheck/jquery.multicheck.js"/>"></script>
-<script src="<c:url value="/template/admin/assets/extra-libs/DataTables/datatables.min.js"/>"></script>
-<script>
-    /****************************************
-     *       Basic Table                   *
-     ****************************************/
-    $('#zero_config').DataTable();
-</script>
+    <!-- this page js -->
+    <script src="<c:url value="/template/admin/assets/extra-libs/multicheck/datatable-checkbox-init.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/extra-libs/multicheck/jquery.multicheck.js"/>"></script>
+    <script src="<c:url value="/template/admin/assets/extra-libs/DataTables/datatables.min.js"/>"></script>
+    <script>
+        /****************************************
+         *       Basic Table                   *
+         ****************************************/
+        $('#zero_config').DataTable();
+    </script>
 
 </div>
 </body>

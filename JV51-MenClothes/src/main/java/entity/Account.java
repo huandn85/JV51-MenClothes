@@ -13,15 +13,19 @@ public class Account {
     @ManyToOne
     @JoinColumn(name = "roleId")
     private Role roleId;
+    @OneToOne(mappedBy = "account")
+    private Customer customer;
+
 
     public Account() {
     }
 
-    public Account(int id, String name, String password, Role roleId) {
+    public Account(int id, String name, String password, Role roleId, Customer customer) {
         this.id = id;
         this.name = name;
         this.password = password;
         this.roleId = roleId;
+        this.customer = customer;
     }
 
     public int getId() {
@@ -54,5 +58,13 @@ public class Account {
 
     public void setRoleId(Role roleId) {
         this.roleId = roleId;
+    }
+
+    public Customer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
 }

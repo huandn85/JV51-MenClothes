@@ -16,9 +16,9 @@ public class Product {
     private Category categoryId;
     private float importPrice;
     private float price;
-    private String description;
-    private LocalDate date;
-    private int quantity;
+    private String descriptions;
+    private LocalDate dates;
+    private int quantitys;
     @OneToMany(mappedBy = "productId")
     private List<ImageProduct> imageProductList;
     @OneToMany(mappedBy = "productId")
@@ -27,15 +27,15 @@ public class Product {
     public Product() {
     }
 
-    public Product(int id, String name, Category categoryId, float importPrice, float price, String description, LocalDate date, int quantity, List<ImageProduct> imageProductList, List<ProductSizeColor> productSizeColorList) {
+    public Product(int id, String name, Category categoryId, float importPrice, float price, String descriptions, LocalDate dates, int quantitys, List<ImageProduct> imageProductList, List<ProductSizeColor> productSizeColorList) {
         this.id = id;
         this.name = name;
         this.categoryId = categoryId;
         this.importPrice = importPrice;
         this.price = price;
-        this.description = description;
-        this.date = date;
-        this.quantity = quantity;
+        this.descriptions = descriptions;
+        this.dates = dates;
+        this.quantitys = quantitys;
         this.imageProductList = imageProductList;
         this.productSizeColorList = productSizeColorList;
     }
@@ -80,28 +80,28 @@ public class Product {
         this.price = price;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptions() {
+        return descriptions;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescriptions(String descriptions) {
+        this.descriptions = descriptions;
     }
 
-    public LocalDate getDate() {
-        return date;
+    public LocalDate getDates() {
+        return dates;
     }
 
-    public void setDate(LocalDate date) {
-        this.date = date;
+    public void setDates(LocalDate dates) {
+        this.dates = dates;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public int getQuantitys() {
+        return quantitys;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setQuantitys(int quantitys) {
+        this.quantitys = quantitys;
     }
 
     public List<ImageProduct> getImageProductList() {
