@@ -163,7 +163,7 @@
                     </li>
                     <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-newspaper"></i><span class="hide-menu">Order </span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                            <li class="sidebar-item"><a href="/abcdf" class="sidebar-link"><i class="fas fa-clone"></i><span class="hide-menu"> New </span></a></li>
+                            <li class="sidebar-item"><a href="requestOr" class="sidebar-link"><i class="fas fa-clone"></i><span class="hide-menu"> New </span></a></li>
                             <li class="sidebar-item"><a href="getAll" class="sidebar-link"><i class="fas fa-list"></i><span class="hide-menu"> List </span></a></li>
                         </ul>
                     </li>
@@ -181,7 +181,7 @@
                     </li>
                     <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="fas fa-search"></i><span class="hide-menu">SEARCH</span></a>
                         <ul aria-expanded="false" class="collapse  first-level">
-                        <li class="sidebar-item"><a href="SbyName" class="sidebar-link"><i class="mdi-new-box"></i><span class="hide-menu">Search Order By Name</span></a></li>
+                        <li class="sidebar-item"><a href="requestsear" class="sidebar-link"><i class="mdi-new-box"></i><span class="hide-menu">Search Order By Name</span></a></li>
                         <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="fas fa-list"></i><span class="hide-menu">Search Order By Date</span></a></li>
                     </ul>
                 </ul>

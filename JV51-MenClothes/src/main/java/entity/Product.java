@@ -1,5 +1,7 @@
 package entity;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
 import java.awt.*;
 import java.time.LocalDate;
@@ -17,6 +19,7 @@ public class Product {
     private float importPrice;
     private float price;
     private String descriptions;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate dates;
     private int quantitys;
     @OneToMany(mappedBy = "productId")
@@ -118,5 +121,21 @@ public class Product {
 
     public void setProductSizeColorList(List<ProductSizeColor> productSizeColorList) {
         this.productSizeColorList = productSizeColorList;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", categoryId=" + categoryId +
+                ", importPrice=" + importPrice +
+                ", price=" + price +
+                ", descriptions='" + descriptions + '\'' +
+                ", dates=" + dates +
+                ", quantitys=" + quantitys +
+                ", imageProductList=" + imageProductList +
+                ", productSizeColorList=" + productSizeColorList +
+                '}';
     }
 }

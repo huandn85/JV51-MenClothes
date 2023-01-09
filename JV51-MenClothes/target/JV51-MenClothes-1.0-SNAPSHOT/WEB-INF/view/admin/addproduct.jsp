@@ -239,7 +239,7 @@
         <div class="container-fruit">
             <div class="row">
                 <div class="col-6">
-                    <form class="form-horizontal">
+<%--                    <form class="form-horizontal">--%>
                         <div class="card-body">
                             <h4 class="card-title">Product Info</h4>
                             <form:form  modelAttribute ="product" action="addproduct" method="post">
@@ -252,7 +252,7 @@
                                 <div class="form-group row">
                                     <label for="fname" class="col-sm-3 text-right control-label col-form-label">Category Id</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Category" path="categoryId"/>
+                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Category" path="categoryId.id"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -289,7 +289,7 @@
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </form:form>
                         </div>
-                    </form>
+<%--                    </form>--%>
             </div>
         </div>
 

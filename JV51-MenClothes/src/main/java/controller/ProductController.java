@@ -1,5 +1,6 @@
 package controller;
 
+import entity.Order;
 import entity.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,8 +16,13 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
-    @RequestMapping("RqadMIN")
+    @RequestMapping("/")
     public String adminpage() {
+        return "admin/Adminpage";
+    }
+
+    @RequestMapping("RqadMIN")
+    public String Adminpage() {
         return "admin/Adminpage";
     }
 
@@ -28,15 +34,16 @@ public class ProductController {
     }
 
     @RequestMapping(value = "rqproduct", method = RequestMethod.GET)
-    public String rqProduct(Model model) {
+    public String rqProduct( Model model) {
         model.addAttribute("product", new Product());
         return "admin/addproduct";
     }
 
     @RequestMapping(value = "addproduct", method = RequestMethod.POST)
     public String addProduct(@ModelAttribute Product product) {
+        System.out.println("SSSSSSSSSSSSSSSSSSS addProductaddProductaddProductaddProduct");
         productService.addProduct(product);
-        return "admin/productlist";
+        return "redirect:admin/productlist";
     }
 
     @RequestMapping(value = "deleteId", method = RequestMethod.GET)
@@ -60,6 +67,10 @@ public class ProductController {
         System.out.println("678");
         return "admin/productlist";
     }
+
+
+
+
 
 
 }

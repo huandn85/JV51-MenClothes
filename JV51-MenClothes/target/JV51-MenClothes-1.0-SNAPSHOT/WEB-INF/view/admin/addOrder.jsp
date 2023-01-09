@@ -246,32 +246,32 @@
                                 <div class="form-group row">
                                     <label  class="col-sm-3 text-right control-label col-form-label">Account Id</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="accountId"/>
+                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="accountId.id"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="fname" class="col-sm-3 text-right control-label col-form-label">Payment Id</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Category" path="paymentId"/>
+                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Category" path="paymentId.id"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label  class="col-sm-3 text-right control-label col-form-label">PromoID</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="promoId"/>
+                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="promoId.id"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label  class="col-sm-3 text-right control-label col-form-label">statusId</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="statusId"/>
+                                        <form:input type="text" class="form-control" id="fname" placeholder="Enter Name Product Here" path="statusId.id"/>
 
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label class="col-sm-3 text-right control-label col-form-label">shiptmentId</label>
                                     <div class="col-sm-9">
-                                        <form:input type="text" class="form-control" id="fname"  path="shipmentId"/>
+                                        <form:input type="text" class="form-control" id="fname"  path="shipmentId.id"/>
                                     </div>
                                 </div>
                                 <div class="form-group row">

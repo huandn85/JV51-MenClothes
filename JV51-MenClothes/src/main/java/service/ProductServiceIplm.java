@@ -32,4 +32,9 @@ public class ProductServiceIplm implements ProductService{
     public Product updatePro(int id) {
         return productRepository.findById(id).get();
     }
+
+    @Override
+    public List<Product> getSearch(String name) {
+        return productRepository.getSearch(name);
+    }
 }
